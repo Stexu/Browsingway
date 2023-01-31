@@ -18,7 +18,7 @@ internal static class CefHandler
 		settings.CefCommandLineArgs["autoplay-policy"] = "no-user-gesture-required";
 		settings.EnableAudio();
 		settings.SetOffScreenRenderingBestPerformanceArgs();
-		settings.UserAgentProduct = $"Chrome/{Cef.ChromiumVersion} Browsingway/{Assembly.GetEntryAssembly()?.GetName().Version} (ffxiv_pid {parentPid}; renderer_pid {Environment.ProcessId})";
+		settings.UserAgentProduct = $"Mozilla/5.0 (SMART-TV; LINUX; Tizen 5.5) AppleWebKit/537.36 (KHTML, like Gecko) 69.0.3497.106.1/5.5 TV Safari/537.36";
 
 		Cef.Initialize(settings, false, browserProcessHandler: null);
 	}
